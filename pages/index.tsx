@@ -1,7 +1,11 @@
 import React from 'react'
-import Logo from '@components/atoms/Logo'
+import Freesolo from 'public/components/searchbar'
 
 const Home: React.FC = () => {
-  return <Logo />
+  return (
+    <div>
+      <Freesolo />
+    </div>
+  )
 }
 export default Home
