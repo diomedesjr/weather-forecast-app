@@ -1,10 +1,12 @@
 import React from 'react'
-import Freesolo from 'public/components/searchbar'
+import Freesolo from 'src/Components/searchbar'
+import CenteredGrid from 'src/Components/weatherforecast'
 
 const Home: React.FC = () => {
   return (
     <div>
       <Freesolo />
+      <CenteredGrid />
     </div>
   )
 }
