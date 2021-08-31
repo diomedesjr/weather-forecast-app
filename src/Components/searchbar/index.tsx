@@ -21,7 +21,13 @@ export default function Freesolo() {
         freeSolo
         options={top100Films.map((option) => option.title)}
         renderInput={(params) => (
-          <TextField {...params} label="Search City" margin="normal" variant="outlined" placeholder="Enter a city " />
+          <TextField
+            {...params}
+            label="Search City"
+            margin="normal"
+            variant="outlined"
+            placeholder="Enter a city to display 3-day weather forecast "
+          />
         )}
       />
     </div>
