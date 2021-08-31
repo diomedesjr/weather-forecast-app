@@ -1,8 +1,19 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import TextField from '@material-ui/core/TextField'
 import Autocomplete from '@material-ui/lab/Autocomplete'
+import { getSuggestedPlaces } from 'src/api/weatherService'
 
 export default function Freesolo() {
+  const getPlaces = async () => {
+    const response = await getSuggestedPlaces('Cortes Bohol')
+    console.log('response: %o ', response)
+  }
+
+  // mount
+  useEffect(() => {
+    getPlaces()
+  }, [])
+
   return (
     <div style={{ maxWidth: 1200, margin: 'auto' }}>
       <Autocomplete
